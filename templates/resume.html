@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+   
+    <link rel="stylesheet" href="{{url_for('static',filename='/css/index.css')}}">
+    <style>
+.container {
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.container img {
+
+  border-radius: 30px;
+  height: 100rem;
+  width: 95rem;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+}
+
+.container video {
+  background-color: #141519;
+  border-radius: 30px;
+  width: 80rem;
+  height: 60rem;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+}
+
+    </style>
+</head>
+
+<body class="body">
+    <div class="main-container">
+        <header>
+            <h1>My </i><span> Resume</span> 🗒️</h1>
+        </header>
+        <div class="container">
+            <img src="{{url_for('static',filename='/image/profile-pic.png')}}" alt="">
+        </div>
+
+        <div class="download_container">
+
+            <a href="" download="" class="btn"> <span></span>
+                <span></span>
+                <span></span>
+                
+                <span></span>
+               download ⬇️
+
+            </a>
+
+        </div>
+    </div>
+</body>
+
+</html>
