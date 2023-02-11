@@ -6,14 +6,12 @@
   <meta name="theme-color" content="#4285f4">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="{{url_for('static',filename='/css/index.css')}}">
-  <link rel="icon" href="{{url_for('static',filename='/image/619282-middle.ico')}}">
-
-
+ 
+  <link rel="icon" href="619282-middle.ico">
 
 
 
@@ -39,7 +37,7 @@
         <a class="active" href="#home" style="--i:1">Home</a>
         <a href="#about" style="--i:2">About</a>
         <a href="#education" style="--i:4">Education</a>
-        <a href="#skills" style="--i:3">Skills</a>
+        <a href="#projects" style="--i:3">Projects</a>
 
         <a href="#contact" style="--i:5">Contact</a>
 
@@ -59,12 +57,12 @@
 
       <div class="socials">
         <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          <li><a class="github" aria-label="GitHub" href="" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="twitter" aria-label="Twitter" href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
-          <li><a class="telegram" aria-label="Telegram" href="" target="_blank"><i
+          <li><a href="https://www.linkedin.com/in/anshul-kumar-121973227" class="linkedin" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/anshulkashyap1234" class="github" aria-label="GitHub"  target="_blank"><i class="fab fa-github"></i></a></li>
+         
+          <li><a class="telegram" aria-label="Telegram" href="https://t.me/Anshulkumar8112" target="_blank"><i
                 class="fab fa-telegram-plane"></i></a></li>
-          <li><a class="instagram" aria-label="Instagram" href=""><i class="fab fa-instagram" target="_blank"></i></a>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.facebook.com/profile.php?id=100048509135868&mibextid=ZbWKwL"><i class="fab fa-facebook" target="_blank"></i></a>
           </li>
 
 
@@ -72,16 +70,14 @@
       </div>
     </div>
     <div class="image">
-      <img class="tilt"
-        src="{{url_for('static',filename='/image/Resize Image To WhatsApp Profile Size Without Cropping.jpeg')}}"
-        alt="image">
+      <img class="tilt" src="Resize Image To WhatsApp Profile Size Without Cropping.jpeg" alt="">
     </div>
   </section>
   <section class="about" id="about">
     <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
     <div id="selfcontainer">
       <div class="image">
-        <img src="{{url_for('static',filename='/image/profile-pic.png')}}" alt="" class="tilt">
+        <img src="profile-pic.png" alt="" class="tilt">
       </div>
       <div id="my_self">
         <p>Hey! my name is anshul kashyap. I'm an aspiring python developer.i have pursuing my b.tech in s.d college of
@@ -101,7 +97,7 @@
 
 
           <div class="resumebtn">
-            <a href="/resume" class="btn" target="parent"> <span></span>
+            <a href="resume.html" class="btn" target="parent"> <span></span>
               <span></span>
               <span></span>
               <span></span>
@@ -109,15 +105,7 @@
 
             </a>
           </div>
-          <div class="resumebtn" style="width:25rem ;">
-            <a href="/video" class="btn" target="parent"> <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              video-info
 
-            </a>
-          </div>
         </div>
       </div>
     </div>
@@ -132,21 +120,23 @@
 
       <div class="box">
         <div class="image">
-          <img draggable="false" src="{{url_for('static',filename='/image/2013-08-27.jpg')}}" alt="">
+          <img draggable="false" src="2013-08-27.jpg" alt="">
         </div>
         <div class="content">
-          <h3>science with maths </h3>
+          <h3>ACADEMIC QUALIFICATION </h3>
           <p>L.J.P.S.V.M inter collage jansat road muzaffarnagar</p>
           <h4>2016-2020 | Completed</h4>
         </div>
       </div>
       <div class="box">
         <div class="image">
-          <img draggable="false" src="{{url_for('static',filename='/image/1436854511phpp6gUvB_g.jpg')}}" alt="">
+          <img draggable="false" src="1436854511phpp6gUvB_g.jpg" alt="">
         </div>
         <div class="content">
-          <h3> Bachelor of Technology and engginering</h3>
+          <h3>PROFESSIONAL QUALIFICATION</h3>
           <p>s.d college of engg. and tech.muzaffarnagar</p>
+          <p> B.Tech</p>
+
           <h4>2020-2024 | Pursuing</h4>
         </div>
       </div>
@@ -155,13 +145,13 @@
     </div>
   </section>
 
-  <section class="projects">
+  <section class="projects" id="projects">
     <h2 class="heading">👨‍💻 projects</h2>
     <div class="containers">
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <img class="tilt" src="{{url_for('static',filename='/image/04.gif')}}" alt="">
+            <img class="tilt" src="04.gif" alt="">
 
           </div>
         </div>
@@ -178,7 +168,7 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <img class="tilt" src="{{url_for('static',filename='/image/04.jpg')}}" alt="">
+            <img class="tilt" src="04.jpg" alt="">
           </div>
         </div>
         <div class="face face2">
@@ -193,7 +183,7 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <img class="tilt" src="{{url_for('static',filename='/image/04.gif')}}" alt="">
+            <img class="tilt" src="04.gif" alt="">
 
           </div>
         </div>
@@ -210,7 +200,7 @@
 
   </section>
 
-  <section class="footer">
+  <section class="footer" id="contact">
 
     <div class="box-container">
 
