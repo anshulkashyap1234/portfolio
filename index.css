@@ -910,9 +910,14 @@ nav a:hover{
   font-family: consolas;
   flex-direction: column;
   overflow: auto;
+  background-color: #00000084;
   
 }
-
+.projects .heading{
+  color: black;
+  font-weight: 700;
+  font-style: normal;
+}
 .projects::-webkit-scrollbar {
 width: 1rem;
 }
