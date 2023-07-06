@@ -80,7 +80,7 @@ html {
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
 section {
-  min-height: 100vh;
+  
   padding: 2rem 9%;
 }
 
@@ -898,127 +898,6 @@ nav a:hover{
 }
 
 
-.projects{
-  
-  
-  margin: 0;
-  padding: 0;
-  height: 60vh;
-  min-height: 80vh;
-  display: flex;
- align-items: center;
-  font-family: consolas;
-  flex-direction: column;
-  overflow: auto;
-  background-color: #00000084;
-  
-}
-.projects .heading{
-  color: black;
-  font-weight: 700;
-  font-style: normal;
-}
-.projects::-webkit-scrollbar {
-width: 1rem;
-}
-.projects::-webkit-scrollbar-track {
-background: rgb(235, 202, 245);
-}
-.projects::-webkit-scrollbar-thumb {
-background: #420177;
-}
-.projects .heading{
-font-size: 4.5rem;
-font-weight: 800;
-}
-
-
-.containers{
-margin-top: 22px;
-width: 1500px;
-position: relative;
-display: flex;
-justify-content: space-around;
-}
-
-.containers .card{
-position: relative;
-cursor: pointer;
-}
-
-.containers .card .face{
-width: 350px;
-height: 200px;
-transition: 0.5s;
-}
-
-.containers .card .face.face1{
-position: relative;
-background: #333;
-display: flex;
-justify-content: center;
-align-items: center;
-z-index: 1;
-transform: translateY(100px);
-}
-
-.containers .card:hover .face.face1{
-background: #ff0057;
-transform: translateY(0);
-}
-
-.containers .card .face.face1 .content{
-opacity: 1;
-transition: 0.5s;
-}
-
-
-
-.containers .card .face.face1 .content img{
-width: 350px;
-}
-
-
-
-.containers .card .face.face2{
-position: relative;
-background: #fff;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 20px;
-box-sizing: border-box;
-box-shadow: 8px  15px 20px 10px rgba(0, 0, 0, 0.596);
-transform: translateY(-100px);
-}
-
-.containers .card:hover .face.face2{
-transform: translateY(0);
-}
-
-.containers .card .face.face2 .content p{
-margin: 0;
-padding: 0;
-font-size: 2.3rem;
-}
-
-.containers .card .face.face2 .content a{
-margin: 15px 0 0;
-display:  inline-block;
-text-decoration: none;
-font-weight: 900;
-color: #333;
-padding: 5px;
-border: 1px solid #333;
-font-size: 1.3rem;
-}
-
-.containers .card .face.face2 .content a:hover{
-background: #333;
-color: #fff;
-}
-/*prject end*/
-
 
 
 
@@ -1027,7 +906,7 @@ color: #fff;
 
 .footer {
 min-height: 40vh;
-padding-top: 30px;
+
 background: rgb(0, 1, 43);
 
 }
@@ -1101,4 +980,143 @@ color: #ffae00;
 .footer .box-container .box .share a {
   padding: 1.2rem;
 }
+}
+
+
+.main .home1 {
+  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  
+  min-height: 50vh;
+  align-items: center;
+  width: 90%;
+
+}
+.main .home1 .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  gap: 10px;
+  overflow: hidden;
+  padding: 20px 20px 20px 20px;
+  
+backdrop-filter: blur( 15px );
+-webkit-backdrop-filter: blur( 15px );
+
+
+}
+.main .content .div{
+  
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main .home1 .image {
+
+ border-radius: 20px;
+  
+  overflow: hidden;
+ 
+  width: 50%;
+  height: 100%;
+  
+}
+
+.main .home1 .image img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+
+}
+
+
+
+
+
+
+.main .home1 .content p {
+  font-size: 1.7rem;
+  color: #000;
+  font-weight: 500;
+  
+  padding: 1rem 0;
+
+}
+
+.main .home1 .content h1 span {
+font-size: 2.7rem;
+  color: rgb(25, 22, 22);
+
+  padding: 1rem 0;
+}
+
+.main .home1 .btn1 {
+  margin-top: 3rem;
+  
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  
+
+  color: #fff;
+  background: #2506ad;
+
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+
+
+
+
+
+.main .home1 .btn1:hover {
+  background: #04477e;
+}
+
+
+.main{
+width: 100%;
+
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+@media (max-width:1217px) {
+  .main .image img{
+      
+      display: none;
+  }
+  .main .home1 .content{
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      margin-bottom: 30px;
+  }
+ 
+}
+
+
+.main .buttons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+ 
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  
+  
 }
